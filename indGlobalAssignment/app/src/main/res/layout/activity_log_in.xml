@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spoorthi.taskapp.LogInActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/scrollview">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear6"
+            android:layout_marginTop="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to your account"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_pirates"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenant" />
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_ninjas"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Owner" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailorPh"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:hint="Enter your mail id or phone number"
+                android:background="@drawable/edit_txt_style"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_txt_style"/>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/liginBtn"
+                        android:text="Login"
+                        android:textSize="16dp"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:background="@android:color/holo_blue_light"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password?"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:background="#D3D3D3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/view2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="or"
+                    android:textSize="18dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:background="#D3D3D3"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/LoginWith"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login with"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fbook"
+                            android:src="@mipmap/ic_fb"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gPlus"
+                            android:src="@mipmap/ic_googlep"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#525252">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/noAccText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpBtn"
+                android:layout_marginBottom="10dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:layout_below="@+id/noAccText"
+                android:background="#ec5a28"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
